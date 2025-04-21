@@ -1,6 +1,6 @@
 uber-demand-prediction
 ==============================
-
+![alt text](image.png)
 Predicting demand for cabs across New York City for the next time intervals.
 
 Project Organization
