@@ -8,7 +8,7 @@ from mlflow.client import MlflowClient
 import dagshub
 dagshub.init(repo_owner='arshadjamal6002', repo_name='demand-prediction-mlops', mlflow=True)
 
-# set the mlflow tracking uri
+# mlflow tracking uri
 mlflow.set_tracking_uri("https://dagshub.com/arshadjamal6002/demand-prediction-mlops.mlflow")
 
 # create a logger
