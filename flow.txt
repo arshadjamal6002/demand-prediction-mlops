@@ -27,6 +27,38 @@ PUSH NOW giving TAG version 1.1
 
 
 
+try another experiment , maybe a new feature engineering tech or new models
+but if results not good
+roll back to previous tag version
+but isse data change nhi hoga nor the model, coz we were not tracking data -> requirement of data versioning
+    we may loose the best model with the best runnable data needed for that
+    why git isnt used to track data and model?
+        size
+        line by line tracking impossible for data and model coz model files are binary
+    dvc relies on git for the versioning of data, isnt a complete verswion control in itself
+    data repo at local/cloud 
+    1. dvc makes meta data file with data, small, contains hash and all
+    2. v1 we put the code and metadata file into git and data file to dvc repo(remote)
+    3. v2 put the code and metadata 
+    4. on pull gets the code and the data file from dvc repo based on metadata file stored by git
+
+so after initialsing git and dvc
+connect the remotes of both github and dvc(changes in config file)
+git add first commit (dvc config files)
+dvc add ( multiple things happen here 1. cache folder in .dvc folder
+                                      2. .gitignore in data folder telling git not to track data files
+                                      3. .dvc file for .csv file genereated
+                                      4.  )
+git add code and dvc files
+git commit 
+dvc push to remote
+git push to github (experiment 1)
+
+
+
+
+
+
 
 
 
