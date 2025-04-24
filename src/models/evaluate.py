@@ -14,7 +14,7 @@ import dagshub
 DAGSHUB_TOKEN = 'fa20450c30ee3218c30dfeda3799f846aba9ea1e'
 dagshub.init(repo_owner='arshadjamal6002', repo_name='demand-prediction-mlops', mlflow=True)
 
-# set the mlflow tracking uri
+# mlflow tracking uri
 mlflow.set_tracking_uri("https://dagshub.com/arshadjamal6002/demand-prediction-mlops.mlflow")
 
 # set the experiment name
