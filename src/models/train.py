@@ -10,7 +10,7 @@ from sklearn.compose import ColumnTransformer
 
 set_config(transform_output="pandas")
 
-# create a logger
+# logger
 logger = logging.getLogger("train_model")
 logger.setLevel(logging.INFO)
 
