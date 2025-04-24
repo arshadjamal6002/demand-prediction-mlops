@@ -1,0 +1,33 @@
+5 files in src for different specific work, and then connecting them thru dvc
+params.yaml file to adjust params globally and then adding them into dvc aswell and into indicidual py files
+code quality not htat good - use functions, type hinting, exception handling, logging
+    exception handling - jahan jahan pe code ke fatne ka chance hai -> jahan file open ho rhi hai
+    dev phase = logging into console (terminal)
+    deployment phase  = log into file, coz the moment terminal closed , logs lost
+    logger ko handler se pata chalta hai logging kahan karni hai(console handler, file handler) and formatter tells the format of logging
+    one logger can do logging at both places simultaneously
+
+after doing all this the next thing that we need to focus on is VERSION CONTROL (github repo and data version control)
+
+
+install cookie cutter , create cookie cutter template
+create venv and install deps
+delete unnecessary files
+initialise git and dvc
+put env, models, reports file in the gitignore file
+initial commit
+create github repo for the code and then add the github remote .git url
+push
+add python files and commit(push only after) -  one module
+then dvc.yaml file  NOW GOOD TIME TO PUSH
+install dependencies, dvc init , run dvc repro 
+and then requirements.txt file - using pip freeze > requirements.txt : along with the version names
+PUSH NOW giving TAG version 1.1
+
+
+
+
+
+
+
+
