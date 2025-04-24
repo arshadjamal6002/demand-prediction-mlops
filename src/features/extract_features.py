@@ -7,7 +7,7 @@ from sklearn.cluster import MiniBatchKMeans
 from sklearn.preprocessing import StandardScaler
 
 
-# create a logger
+# logger
 logger = logging.getLogger("extract_features")
 logger.setLevel(logging.INFO)
 
