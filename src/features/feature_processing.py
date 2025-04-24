@@ -3,7 +3,7 @@ from pathlib import Path
 import pandas as pd
 
 
-# create a logger
+# logger
 logger = logging.getLogger("feature_processing")
 logger.setLevel(logging.INFO)
 
